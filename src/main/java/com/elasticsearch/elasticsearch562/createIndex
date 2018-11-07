@@ -1,0 +1,40 @@
+
+localhost:9200/book
+
+{
+	"settings":{
+		"number_of_shards": 3,
+		"number_of_replicas": 1
+	},
+	"mapping":{
+		"novel":{
+			"properities":{
+				"name":{
+					"type": "text"
+				 },
+				 "id":{
+					"type": "integer"
+				 },
+				 "user":{
+					"type": "text"
+				 },
+				 "auther":{
+					"type": "text"
+				}
+			}
+		}
+	}
+}
+
+
+
+
+localhost:9200/database/_search
+
+{
+	"query":{
+		"match":{
+			"goodsPrice":"22.33"
+		}
+	}
+}

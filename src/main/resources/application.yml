@@ -1,0 +1,5 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: fc
+      cluster-nodes: localhost:9200
